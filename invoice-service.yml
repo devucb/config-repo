@@ -1,0 +1,19 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:postgresql://invoice-postgres:5432/invoice_db
+    username: invoice_service
+    password: invoice_password
+    driver-class-name: org.postgresql.Driver
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: admin
+    password: admin
+
+app:
+  invoice:
+    auto-generate: true
+    payment-timeout: 3600

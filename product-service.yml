@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://product-postgres:5432/product_db
+    username: product_service
+    password: product_password
+    driver-class-name: org.postgresql.Driver
+
+app:
+  product:
+    max-products-per-page: 20

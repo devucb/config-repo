@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://user-postgres:5432/user_db
+    username: user_service
+    password: user_password
+    driver-class-name: org.postgresql.Driver
+
+app:
+  user:
+    default-role: USER
+    max-login-attempts: 3

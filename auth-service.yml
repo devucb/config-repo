@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:postgresql://auth-postgres:5432/auth_db
+    username: auth_service
+    password: auth_password
+    driver-class-name: org.postgresql.Driver
+
+jwt:
+  secret: your-super-secret-jwt-key-here-make-it-long-and-secure
+  expiration: 86400000
+
+app:
+  auth:
+    password-min-length: 8
+    max-login-attempts: 5
